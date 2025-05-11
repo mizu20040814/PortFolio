@@ -1,0 +1,191 @@
+body {
+  font-family: "Lora", serif;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/images/granville_island_L.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 400;
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+
+/* .custom-borderline {
+  border-bottom: 1px solid #d92323;
+} */
+
+.nav-link {
+  border-bottom: 1px solid transparent;
+  transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    border-bottom 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link:hover {
+  color: #d92323;
+  border-bottom: 1px solid #d92323;
+}
+
+.navbar-toggler,
+.custom-red-text,
+.custom-a {
+  color: #d92323;
+}
+
+.custom-a {
+  text-decoration: none;
+  transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    border-bottom 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.custom-a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.btn,
+.navbar-toggler,
+.card {
+  border-radius: 0%;
+}
+
+.custom-card-dark {
+  border: 1px solid #d92323;
+}
+
+.home-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/images/granville_island_L.jpg); /* .heroと同じ画像 */
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home-contact.custom-a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+/* contact page config */
+
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/images/vancouver_no1.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contact.custom-a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+/* aboutme page config */
+.aboutme {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/images/vancouver_no2.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.carousel-img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* works page config */
+
+.works {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/images/works_coding.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.works-p {
+  font-size: 1.25rem;
+}
+
+.custom-works-a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+/* animation home */
+@keyframes borderReveal {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.custom-borderline {
+  display: inline-block;
+  position: relative;
+}
+
+.custom-borderline::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: #d92323;
+  transition: none;
+}
+
+.custom-borderline.animate-border::after {
+  animation: borderReveal 1s ease-out forwards;
+}
+
+.works-title {
+  font-size: 3rem;
+  font-weight: 400;
+  opacity: 0;
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.works-subtitle {
+  opacity: 0;
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.7s;
+}
+
+.notfound {
+  background-image: url(/images/notfound.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
